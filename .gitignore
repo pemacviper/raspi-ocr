@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+*.env
+
+# Test documents
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
