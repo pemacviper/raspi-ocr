@@ -1,0 +1,18 @@
+services:
+  ocr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ocr
+    restart: unless-stopped
+
+    environment:
+      TZ: Europe/Berlin
+
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
